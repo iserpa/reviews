@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  color: #3c3c3c;
+  height: 100vh;
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to bottom, #e0eafc, #8e9eab);
+  background: linear-gradient(to bottom, #e0eafc, #8e9eab);
+}
+
+.reviews h1{
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.reviews h1::after {
+  content: '';
+  border-bottom: 4px solid #c779d0;
+  width: 4rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card {
+  width: 30rem;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.card-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-img {
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 1rem;
+}
+
+.card-img img{
+  width: 13rem;
+  margin-left: -1rem;
+  margin-top: -3rem;
+}
+
+.review-inside {
+  padding: 1rem;
+}
+
+.author {
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: -0.4rem;
+}
+
+.review-career {
+  font-weight: 500;
+  color: #659fcf;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.review-text {
+  margin-top: 0.5rem;
+}
+
+.fa-solid {
+  font-size: 1.2rem;
+  color: #c779d0;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  color: #659fcf;
+}
+
+.surprise-btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #659fcf;
+  background: #e0eafc;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.surprise-btn:hover {
+  background: #659fcf;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    margin-top: 2rem;
+  }
+}
